@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+:root {
+    --fontColor: #3A3A3A;
+    --btnColor: #E02C6D;
+    --reatingColor: #FB8200;
+    --btnTextcolor:#6C6C6C;
+    --footerColor: #0A0826;
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+.body{
+    padding: 95px 120px 0px 120px;
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    padding: 0px 300px;
+}
+
+/*----------------
+    Navigation-Bar
+-----------------*/
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-titel {
+    color: var(--fontColor);
+    font-size: 26px;
+}
+
+.nav-link {
+    display: flex;
+    gap: 36px;
+}
+
+.nav-link li {
+    list-style: none;
+}
+
+.nav-link li a {
+    text-decoration: none;
+    color: var(--fontColor);
+    font-size: 20px;
+}
+
+.icon {
+    font-size: 26px;
+    color: var(--fontColor);
+}
+
+/*----------------------
+    Navigation-Bar End
+----------------------*/
+/*----------------------
+        Banner
+----------------------*/
+/*---------------------
+        Left Side
+----------------------*/
+.top-benner {
+    margin-top: 50px;
+    margin-bottom: 260px;
+}
+
+.main-banner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left {
+    width: 50%;
+    margin-top: 145px;
+
+}
+
+.left h1 {
+    font-weight: 700;
+    font-size: 52px;
+    color: var(--fontColor);
+}
+
+.left p {
+    font-size: 16px;
+    color: var(--fontColor);
+    margin: 16px 0px 16px 0px;
+}
+
+.preebook-btn {
+    padding: 10px 24px;
+    background-color: var(--btnColor);
+    border-radius: 41px;
+    color: white;
+    border: none;
+    font-size: 16px;
+}
+
+.fa-solid {
+    padding-left: 3px;
+}
+
+/*---------------------
+        Right Side
+----------------------*/
+.right .img {
+    margin-right: 500px;
+    margin-top: 80px;
+    padding-bottom: 80px;
+
+}
+
+.right .img-cam {
+    position: absolute;
+    width: 440px;
+    height: 414px;
+
+}
+
+/*---------------------
+     Right Side End
+----------------------*/
+/*---------------------
+    Company logo
+---------------------*/
+.hrline-1 {
+    margin-top: 20px;
+    border: 1px solid rgb(228, 228, 228);
+    margin-bottom: 30px;
+}
+
+.hrline-2 {
+    margin-top: 20px;
+    border: 1px solid rgb(228, 228, 228);
+    margin-bottom: 150px;
+}
+
+.company-logo {
+    margin-top: 35px;
+    padding: 0px 300px;
+}
+
+.company-name {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/*-------------------------
+        product Card
+-------------------------*/
+.product-view {
+    margin-bottom: 50px;
+}
+
+.product {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.title {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: var(--fontColor);
+}
+
+.Card {
+    width: 329px;
+    height: 476px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+}
+
+.product-img1 {
+    width: 300px;
+    height: 256px;
+    padding: 14px;
+    border-radius: 5px;
+}
+
+.product-title {
+    padding: 14px;
+}
+
+.product-title h2 {
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.price {
+    font-size: 24px;
+    margin-top: 6px;
+    font-weight: 500;
+}
+
+.reating {
+    color: var(--reatingColor);
+    font-size: 12px;
+    margin-top: 8px;
+}
+
+.icon {
+    display: flex;
+    gap: 10px;
+}
+
+.reating-number {
+    font-size: 14px;
+    margin-top: 7px;
+    color: #18191F;
+}
+
+.product-info {
+    padding-top: 5px;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.See-more {
+    display: flex;
+    justify-content: flex-end;
+    padding: 30px 0px;
+}
+
+.See-more a {
+    text-decoration: none;
+}
+
+.See-more p,
+.icolor {
+    color: #E02C6D;
+}
+
+/*--------------------
+        Card End
+--------------------*/
+/*--------------------
+    Product Featured
+--------------------*/
+.featured-products{
+    margin-bottom: 95px;
+}
+.product-featured {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.text-titel {
+    font-size: 38px;
+}
+
+.mini-text {
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--btnTextcolor);
+}
+
+.join {
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+}
+
+.icolor2 {
+    font-size: 16px;
+    color: white;
+}
+
+.btn-color {
+    padding: 10px 30px;
+    background-color: var(--btnColor);
+}
+/*-------------------------
+            footer
+--------------------------*/
+footer{
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    height: 240px;
+    background-color: var(--footerColor);
+    color: white;
+    text-align: center;
+}
+.footer{
+    padding-top: 60px;
+}
+.footer-p{
+    padding: 10px 0;
+}
+.social-icon{
+    margin-top: 10px;
+    font-size: 20px;
+    padding-left: 10px;
+}
