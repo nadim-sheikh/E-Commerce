@@ -5,7 +5,7 @@
     --fontColor: #3A3A3A;
     --btnColor: #E02C6D;
     --reatingColor: #FB8200;
-    --btnTextcolor:#6C6C6C;
+    --btnTextcolor: #6C6C6C;
     --footerColor: #0A0826;
 }
 
@@ -14,7 +14,7 @@
     padding: 0%;
 }
 
-.body{
+.body {
     padding: 95px 120px 0px 120px;
     font-family: 'Roboto', sans-serif;
 }
@@ -239,15 +239,20 @@ nav {
     color: #E02C6D;
 }
 
+.none {
+    display: none;
+}
+
 /*--------------------
         Card End
 --------------------*/
 /*--------------------
     Product Featured
 --------------------*/
-.featured-products{
+.featured-products {
     margin-bottom: 95px;
 }
+
 .product-featured {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -278,10 +283,11 @@ nav {
     padding: 10px 30px;
     background-color: var(--btnColor);
 }
+
 /*-------------------------
             footer
 --------------------------*/
-footer{
+footer {
     font-family: 'Roboto', sans-serif;
     width: 100%;
     height: 240px;
@@ -289,14 +295,266 @@ footer{
     color: white;
     text-align: center;
 }
-.footer{
+
+.footer {
     padding-top: 60px;
 }
-.footer-p{
+
+.footer-p {
     padding: 10px 0;
 }
-.social-icon{
+
+.social-icon {
     margin-top: 10px;
     font-size: 20px;
     padding-left: 10px;
+}
+
+/*-----------------------------------------------------------------------------------------
+                                        Responsiv
+-----------------------------------------------------------------------------------------*/
+/*------------------------------------Laptop Display-------------------------------------*/
+@media screen and (max-width: 1024px) {
+    .body {
+        padding: 80px 100px 0px 100px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    main {
+        padding: 0px 100px;
+    }
+
+    .company {
+        padding-left: 20px;
+    }
+
+    .product {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .company-logo {
+        margin-top: 35px;
+        padding: 0px 100px;
+    }
+
+    .Card {
+        width: 300px;
+        height: 400px;
+        background: rgb(255, 255, 255);
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 40px;
+        border-radius: 5px;
+    }
+
+    .product-img1 {
+        width: 300px;
+        height: 256px;
+        padding: 0px;
+        border-radius: 5px;
+    }
+
+    .product-img1 img {
+        width: 280px;
+        padding: 10px;
+    }
+
+    .product-title {
+        padding: 9px;
+    }
+
+    .product-title h2 {
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .product-info {
+        display: none;
+    }
+
+    .none {
+        display: contents;
+    }
+
+    .product-featured {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/*------------------Mobile------------------*/
+@media screen and (max-width: 360px) {
+    .body {
+        padding: 10px 0px 0px 0px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    main {
+        padding: 0px 0px;
+    }
+
+    hr {
+        display: none;
+    }
+
+    .top-benner {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .preebook-btn {
+        padding: 10px 24px;
+        background-color: var(--btnColor);
+        border-radius: 41px;
+        color: white;
+        border: none;
+        font-size: 16px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .left p {
+        font-size: 14px;
+        color: var(--fontColor);
+        margin: 6px 0px 6px 0px;
+        text-align: center;
+    }
+
+    .left h1 {
+        font-weight: 700;
+        font-size: 24px;
+        color: var(--fontColor);
+        text-align: center;
+    }
+
+    .main-banner {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+    }
+
+    .left {
+        width: 404px;
+        height: 222px;
+        padding-top: 100px;
+    }
+
+    .right .img {
+        margin-right: -70px;
+        margin-top: -44px;
+        padding-bottom: 0px;
+        transform: scale(0.60);
+        text-align: center;
+    }
+
+    .right .img-cam {
+        width: 440px;
+        height: 414px;
+
+    }
+
+    .company {
+        padding-left: 0px;
+       display: grid;
+       grid-template-rows: repeat(2, 1fr);
+    }
+
+    .company-name {
+        display: grid;
+        grid-template-columns: repeat(4, 1);
+    }
+
+    .product {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+        margin-left: 30px;
+    }
+
+    .text-titel {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .mini-text {
+        font-weight: 700;
+        font-size: 16px;
+        color: var(--btnTextcolor);
+        text-align: center;
+    }
+
+    .btn-color {
+        align-items: center;
+        background-color: var(--btnColor);
+        display: flex;
+        justify-content: center;
+        margin-left: 155px;
+    
+    }
+
+    .company-logo {
+        margin-top: 35px;
+        padding: 0px 100px;
+    }
+
+    .Card {
+        width: 300px;
+        height: 400px;
+        background: rgb(255, 255, 255);
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 40px;
+        border-radius: 5px;
+    }
+
+    .product-img1 {
+        width: 257px;
+        height: 257px;
+        padding: 0px;
+        border-radius: 5px;
+    }
+
+    .product-img1 img {
+        width: 280px;
+        padding: 10px;
+    }
+
+    .product-title {
+        padding: 9px;
+    }
+    .featured-products-img{
+        transform: scale(0.8);
+        margin-left: -20px;
+    }
+    .product-title h2 {
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .product-info {
+        display: none;
+    }
+
+    .none {
+        display: contents;
+    }
+
+    .product-featured {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .product-featured-text{
+        width: 90%;
+        margin-left: 15px;
+    }
+    .join {
+        font-size: 16px;
+        color: white;
+        text-decoration: none;}
+.See-more{
+    margin-right: 40px;
+}
 }
